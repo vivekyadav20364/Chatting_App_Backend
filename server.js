@@ -35,7 +35,7 @@ const server=app.listen(process.env.PORT,()=>console.log(`server is running on p
 const io=require('socket.io')(server,{
     pingTimeout:60000,   //the connection is active only for the 60 sec and after that the connection is closed to save the bandwidth
     cors: {
-        origin:"http://localhost:3000",
+        origin:"https://vychat.netlify.app/",
     }
 });
 
